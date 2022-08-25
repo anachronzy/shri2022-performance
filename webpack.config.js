@@ -26,7 +26,10 @@ const config = {
     new CopyPlugin({
       patterns: [{ from: 'src/index.html' }, {
         context: path.resolve(__dirname, "src"),
-        from: '*.css'
+        from: '*.css',
+        transform(content) {
+          return content.toString().replace(/\.\.\/assets/g, 'assets')
+        }
       }]
     })
   ],
