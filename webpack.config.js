@@ -7,9 +7,8 @@ const config = {
   mode: "production",
   entry: './src/scripts.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'scripts.js',
-    clean: true
+    path: __dirname,
+    filename: 'scripts.js'
   },
   module: {
     rules: [
