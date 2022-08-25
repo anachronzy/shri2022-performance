@@ -336,9 +336,7 @@
       display: flex;
       gap: 0.9375rem;
       height: 20.6875rem;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      /*background: no-repeat 50% 50% url(assets/bg80p.webp);*/
+      background: no-repeat 50% 50% url(assets/bg80p.webp);
       /*background-size: cover;*/
       background-size: 1260px;
       border-radius: 1.25rem;
@@ -1062,11 +1060,6 @@
 
     Array.from(document.querySelectorAll('.main__devices')).forEach(makeTabs);
     Array.from(document.querySelectorAll('.header__menu')).forEach(makeMenu);
-  })
-
-  window.addEventListener('load', () => {
-    const elem = document.getElementsByClassName('hero-dashboard')[0];
-    elem.style.backgroundImage = 'url(assets/bg80p.webp)';
   })
 </script>
 </body>
